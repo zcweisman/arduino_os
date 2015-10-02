@@ -163,8 +163,6 @@ struct ext2_dir_entry directoryEntry(uint32_t blockIndex,uint16_t index, char bu
         currentIndex++;
     }
     memcpy(&dirReturn, directory, sizeof(struct ext2_dir_entry));
-    //indexToBlock((BLOCK_SIZE * blockIndex) + readData + 8, &block, &offset); 
-    //sdReadData(block, offset, buffer, dirReturn.name_len + 1);
     memcpy(buffer, directory->name, dirReturn.name_len + 1);
     buffer[dirReturn.name_len] = "\0";
     return dirReturn;

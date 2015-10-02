@@ -11,10 +11,6 @@
  *  Copyright (C) 1991, 1992  Linus Torvalds
  */
 
-//typedef unsigned int uint32_t;
-//typedef unsigned short uint16_t;
-//typedef unsigned char uint8_t;
-
 uint32_t fillBuffer(uint16_t songIndex, uint8_t buffer[256], uint32_t callCount);
 /*
  * Special inode numbers

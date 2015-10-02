@@ -1,6 +1,6 @@
 #include <avr/io.h>
 #include <util/delay.h>
-#include <compat/deprecated.h> //Weird fix???
+#include <compat/deprecated.h>
 #include "globals.h"
 #include "SdReader.h"
 #include "WavePinDefs.h"
