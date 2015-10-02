@@ -1,5 +1,5 @@
-program_5: 
-	avr-gcc -mmcu=atmega328p -DF_CPU=16000000 -O2 -o main.elf program5.c os.c serial.c syncro.c SdReader.c ext.c
+arduino_os: 
+	avr-gcc -mmcu=atmega328p -DF_CPU=16000000 -O2 -o main.elf main.c os.c serial.c syncro.c SdReader.c ext.c
 	avr-objcopy -O ihex main.elf main.hex
 	avr-size main.elf
 
